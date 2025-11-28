@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(./add_category.sh)",
+      "Bash(xargs -I {}:*)",
+      "Bash(pnpm build:*)",
+      "Bash(node -e \"const { slugifyCategory } = require('./src/data/categories.ts'); console.log('Test:', slugifyCategory('Technology')); console.log('Test empty:', slugifyCategory('')); console.log('Test space:', slugifyCategory(' '));\":*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

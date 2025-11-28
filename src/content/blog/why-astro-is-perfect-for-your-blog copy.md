@@ -4,7 +4,8 @@ description: '探索Astro框架如何帮助你快速搭建高性能博客，开�
 author: 'Neonity'
 pubDate: 'Nov 26 2025'
 heroImage: '../../assets/images/example-blog-hero1.jpg'
-tags: ['astro', 'blog', 'one-person-company', 'web-development', 'startup']
+tags: ['astro', 'blog', 'one-person-company', 'web-development', 'startup', 'startup']
+category: 'Technology'
 ---
 
 ## 为什么Astro是开始你博客事业的最佳选择
@@ -109,7 +110,8 @@ title: '我的第一篇文章'
 description: '开始你的内容创作之旅'
 pubDate: 'Nov 26 2025'
 heroImage: './hero.jpg'
-tags: ['创业', 'astro']
+tags: ['startup', 'astro']
+category: 'Technology'
 ---
 
 ## 我的创业故事

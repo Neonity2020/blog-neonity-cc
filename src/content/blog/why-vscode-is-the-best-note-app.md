@@ -4,7 +4,8 @@ description: "从认知科学和效率角度分析为什么VS Code是终极笔�
 author: "Neonity"
 pubDate: "2025-11-27"
 heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop"
-tags: ["VS Code", "笔记系统", "知识管理", "效率工具", "工作流"]
+tags: ["VSCode", "Notesystem", "pkm", "productivity", "workflow"]
+category: 'Productivity'
 ---
 
 # 为什么说最好的笔记软件，是VS Code？

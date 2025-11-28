@@ -4,7 +4,8 @@ description: "详细介绍如何使用Astro框架搭建个人博客，包括环�
 author: "Neonity"
 pubDate: "2025-11-27"
 heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop"
-tags: ["Astro", "博客搭建", "前端开发", "个人网站", "技术教程"]
+tags: ["Astro", "blog-setup", "frontend-development", "personal-website", "tech-tutorial"]
+category: 'Technology'
 ---
 
 # Astro博客搭建指南：从零开始构建高性能个人博客
@@ -106,7 +107,8 @@ description: "文章简短描述"
 pubDate: "2025-11-27"
 heroImage: "../../assets/images/my-image.jpg"
 author: "Neonity"
-tags: ["标签1", "标签2"]
+tags: ["tag1", "tag2"]
+category: 'Technology'
 ---
 
 # 文章标题

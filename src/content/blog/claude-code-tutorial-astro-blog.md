@@ -5,6 +5,7 @@ author: 'Neonity'
 pubDate: 'Nov 26 2025'
 heroImage: '../../assets/images/example-blog-hero2.jpg'
 tags: ['claude-code', 'astro', 'tutorial', 'ai', 'productivity', 'automation']
+category: 'Technology'
 ---
 
 ## 使用Claude Code十倍速构建你的Astro博客

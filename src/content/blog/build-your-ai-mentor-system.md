@@ -4,7 +4,8 @@ description: "构建你自己专属的AI导师：从查理·芒格到任何领�
 author: "Neonity"
 pubDate: "2025-11-27"
 heroImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop"
-tags: ["AI应用", "个人成长", "知识管理", "内容创作", "变现策略"]
+tags: ["AI applications", "personal growth", "knowledge management", "content creation", "monetization strategy"]
+category: 'AI'
 ---
 
 # 推荐一种快速学习、高效分享、迅速变现的闭环AI使用方案

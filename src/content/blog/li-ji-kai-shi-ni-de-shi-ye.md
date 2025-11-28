@@ -5,6 +5,7 @@ author: 'Neonity'
 pubDate: 'Nov 26 2025'
 heroImage: '../../assets/images/example-blog-hero8.jpg'
 tags: ['astro', 'blog', 'one-person-company']
+category: 'Business'
 ---
 
 ## 立即开始你的事业——一人公司，白手起家，从零开始创业指南

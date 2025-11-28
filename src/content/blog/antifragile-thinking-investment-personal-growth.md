@@ -3,8 +3,8 @@ title: "反脆弱思维：如何在投资和个人成长中获益于混乱"
 description: "探索塔勒布的'反脆弱'概念，学习如何在不确定性和混乱中获益，将其应用于投资决策和个人发展策略"
 pubDate: "2025-11-28"
 updatedDate: "2025-11-28"
-tags: ["反脆弱", "投资", "个人成长", "风险管理", "思维模型"]
-category: "个人成长"
+tags: ["antifragility", "investment", "personal-growth", "risk-management", "mental-models"]
+category: "growth-hacking"
 ---
 
 ## 什么是反脆弱？

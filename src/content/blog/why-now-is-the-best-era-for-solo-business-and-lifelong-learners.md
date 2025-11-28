@@ -6,7 +6,8 @@ author: "Neonity"
 image:
     url: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&h=630&fit=crop"
     alt: "学习者在使用电脑"
-tags: ["个人成长", "AI时代", "终身学习", "一人公司", "内容创作"]
+tags: ["personal-growth", "artificial-intelligence", "lifelong-learning", "one-person-company", "content-creation"]
+category: 'Business'
 ---
 
 # 为什么现在是一人公司、终身学习者的最好时代

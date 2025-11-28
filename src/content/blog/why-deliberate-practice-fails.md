@@ -4,7 +4,8 @@ description: "从认知科学角度分析刻意练习失效的原因，揭示大
 author: "Neonity"
 pubDate: "2025-11-27"
 heroImage: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&h=630&fit=crop"
-tags: ["认知科学", "学习方法", "刻意练习", "大脑科学", "个人成长"]
+tags: ["cognitive-science", "learning-methods", "deliberate-practice", "brain-science", "personal-growth"]
+category: 'Learning'
 ---
 
 # 为什么你的刻意练习总是无效？认知科学视角下的学习误区

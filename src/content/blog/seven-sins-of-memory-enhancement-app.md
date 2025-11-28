@@ -3,8 +3,8 @@ title: "逆向思维：利用'记忆的七宗罪'打造超强记忆力的科学�
 description: "深入解析丹尼尔·夏克特的'记忆七宗罪'理论，反向应用这些原理设计记忆强化策略，并构建一款革命性的记忆增强应用"
 pubDate: "2025-11-28"
 updatedDate: "2025-11-28"
-tags: ["记忆科学", "认知心理学", "应用设计", "学习技巧", "大脑训练"]
-category: "学习方法"
+tags: ["memory-science", "cognitive-psychology", "app-design", "learning-skills", "brain-training"]
+category: "Learning"
 ---
 
 ## 什么是"记忆的七宗罪"？

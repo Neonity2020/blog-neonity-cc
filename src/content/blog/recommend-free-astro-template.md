@@ -5,6 +5,7 @@ author: 'Neonity'
 pubDate: 'Nov 26 2025'
 heroImage: '../../assets/images/example-blog-hero3.jpg'
 tags: ['astro', 'template', 'blog', 'recommendation', 'one-person-company', 'free-template']
+category: 'Technology'
 ---
 
 ## 推荐一个我亲自使用的Astro博客模板：快速开启你的一人公司事业

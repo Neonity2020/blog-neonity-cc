@@ -5,6 +5,7 @@ author: 'Neonity'
 pubDate: 'Nov 26 2025'
 heroImage: '../../assets/images/example-blog-hero8.jpg'
 tags: ['astro', 'blog', 'one-person-company']
+category: 'Business'
 ---
 
 ## Start Your Own Business Right Now - A Guide to One-Person Companies, Starting from Scratch with Zero Capital

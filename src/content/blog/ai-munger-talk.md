@@ -4,7 +4,8 @@ description: '通过与AI芒格对话，学习查理·芒格的投资哲学，�
 author: 'Neonity'
 pubDate: 'Nov 26 2025'
 heroImage: '../../assets/images/Charlie_Munger_2.jpg'
-tags: ['munger', 'blog', '', 'investment', 'finance']
+tags: ['munger', 'blog', 'investment', 'finance']
+category: 'Investment'
 ---
 
 ## 查理芒格看创新医疗

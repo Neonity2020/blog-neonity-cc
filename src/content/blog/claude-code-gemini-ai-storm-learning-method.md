@@ -3,8 +3,8 @@ title: "AI双风暴学习法：Claude Code博客风暴 × Gemini AI Apps风暴�
 description: "革命性的终身学习方法论：结合Claude Code和Google AI Studio，实现博客创作和应用开发的批量快速生成，在AI辅助下加速学习任何知识领域"
 pubDate: "2025-11-28"
 updatedDate: "2025-11-28"
-tags: ["AI工具", "Claude Code", "Gemini AI", "终身学习", "知识管理", "内容创作"]
-category: "学习方法"
+tags: ["AI tools", "Claude Code", "Gemini AI", "lifelong learning", "knowledge management", "content creation"]
+category: "Learning"
 ---
 
 ## 引言：AI时代的知识革命

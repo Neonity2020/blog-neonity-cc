@@ -5,6 +5,7 @@ author: 'Neonity'
 pubDate: 'Aug 15 2025'
 heroImage: '../../assets/images/example-blog-hero8.jpg'
 tags: ['astro']
+category: 'Technology'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

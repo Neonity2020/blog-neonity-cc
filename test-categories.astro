@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import { slugifyCategory } from './src/data/categories';
+
+const posts = await getCollection('blog');
+const categories = [];
+const issues = [];
+
+for (const p of posts) {
+  const category = p.data.category;
+  const slug = p.slug;
+
+  if (!category) {
+    issues.push({ slug, issue: 'Missing category' });
+  } else if (typeof category !== 'string') {
+    issues.push({ slug, category, issue: 'Not a string' });
+  } else if (category.trim() === '') {
+    issues.push({ slug, category, issue: 'Empty string' });
+  } else {
+    const slugified = slugifyCategory(category);
+    if (slugified.trim() === '') {
+      issues.push({ slug, category, slugified, issue: 'Slugified to empty' });
+    } else {
+      categories.push(slugified);
+    }
+  }
+}
+
+const uniqueCategories = [...new Set(categories)];
+---
+
+<html>
+  <body>
+    <h1>Debug Info</h1>
+    <h2>Issues ({issues.length}):</h2>
+    <pre>{JSON.stringify(issues, null, 2)}</pre>
+
+    <h2>Unique Categories ({uniqueCategories.length}):</h2>
+    <pre>{JSON.stringify(uniqueCategories, null, 2)}</pre>
+  </body>
+</html>

@@ -26,6 +26,10 @@ const categoryMetaBySlug: Record<string, Partial<CategoryMeta>> = {
     title: 'Engineering',
     description: 'Notes on building reliable, fast web products.',
   },
+  'growth-hacking': {
+    title: 'Growth Hacking',
+    description: 'Strategies and tactics for rapid growth.',
+  },
 };
 
 export function getCategoryMeta(slugOrName: string): CategoryMeta {
