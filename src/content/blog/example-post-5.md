@@ -1,6 +1,7 @@
 ---
 title: 'Example Post Five'
 description: 'Testing tags and category pages.'
+author: 'Neonity'
 pubDate: 'Aug 13 2025'
 heroImage: '../../assets/images/example-blog-hero5.jpg'
 category: 'Showcase'

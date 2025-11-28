@@ -7,11 +7,11 @@ function sanitizeToWhite(svg: string, size = 18) {
   let s = svg
     .replace(/<\?xml[\s\S]*?\?>/g, "")
     .replace(/<!--([\s\S]*?)-->/g, "")
-    .replace(/width=\"[^\"]*\"/g, "")
-    .replace(/height=\"[^\"]*\"/g, "")
+    .replace(/width="[^"]*"/g, "")
+    .replace(/height="[^"]*"/g, "")
     // Ensure shapes are visible: use white via currentColor on fill, drop strokes
-    .replace(/fill=\"[^\"]*\"/gi, 'fill="currentColor"')
-    .replace(/stroke=\"[^\"]*\"/gi, 'stroke="none"');
+    .replace(/fill="[^"]*"/gi, 'fill="currentColor"')
+    .replace(/stroke="[^"]*"/gi, 'stroke="none"');
   s = s.replace(/<svg([^>]*)>/, (m, attrs) => `<svg${attrs} width="${size}" height="${size}">`);
   return s;
 }
@@ -23,15 +23,15 @@ const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
 ---
 
 <footer id="contact" class="py-12 px-4 text-center">
-  <h2 class="text-2xl md:text-3xl font-semibold text-foreground">Want to work with me?</h2>
-  <p class="mt-2 text-[color:var(--color-text-muted)]">Let's build something together!</p>
+  <h2 class="text-2xl md:text-3xl font-semibold text-foreground">关注认知凤凰社，一起终身学习</h2>
+  <p class="mt-2 text-[color:var(--color-text-muted)]">探索AI时代的个人成长与一人公司创业实践</p>
   <div class="mt-6 flex justify-center">
-    <Button href="https://www.linkedin.com/in/guihubie/" variant="secondary" size="md" >
+    <Button href="https://weixin.qq.com/cogniphoenix" variant="secondary" size="md" >
       <span class="inline-flex" aria-hidden="true" set:html={contactIcon} />
-      Get in touch
+      关注微信公众号
     </Button>
   </div>
-  <div class="mt-6 text-sm text-[color:var(--color-text-muted)]">Made by: <a href="https://guihubie.com" class="hover:text-[color:var(--accent)]">guihubie</a>.</div>
+  <div class="mt-6 text-sm text-[color:var(--color-text-muted)]">主理人：<a href="https://neonity.cc" target="_blank" rel="noopener noreferrer" class="hover:text-[color:var(--accent)]">Neonity</a> | 认知凤凰社</div>
   <div class="mt-6 flex items-center justify-center gap-4 text-sm">
     <a class="sw-btn-sm" href={feedlyUrl} target="_blank" rel="noopener noreferrer" aria-label="Subscribe in Feedly">Feedly</a>
     <a class="sw-btn-sm" href={inoreaderUrl} target="_blank" rel="noopener noreferrer" aria-label="Subscribe in Inoreader">Inoreader</a>

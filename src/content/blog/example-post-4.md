@@ -1,6 +1,7 @@
 ---
 title: 'Example Post Four'
 description: 'Showcase image layout and card behavior.'
+author: 'Neonity'
 pubDate: 'Aug 12 2025'
 heroImage: '../../assets/images/example-blog-hero4.jpg'
 category: 'Engineering'

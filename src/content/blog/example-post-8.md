@@ -1,6 +1,7 @@
 ---
 title: 'Example Post Eight'
 description: 'Final sample post using example hero images.'
+author: 'Neonity'
 pubDate: 'Aug 08 2025'
 heroImage: '../../assets/images/example-blog-hero8.jpg'
 category: 'Showcase'

@@ -1,6 +1,7 @@
 ---
 title: 'Example Post Three'
 description: 'Placeholder copy for template testing.'
+author: 'Neonity'
 pubDate: 'Aug 10 2025'
 heroImage: '../../assets/images/example-blog-hero3.jpg'
 category: 'Design'

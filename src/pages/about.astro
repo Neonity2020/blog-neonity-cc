@@ -1,27 +1,55 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import GlowLineSeparator from '@/components/ui/separator/GlowLineSeparator.astro';
-const pageTitle = 'About Me';
-const pageDescription = 'Learn more about my background and approach to software engineering.';
+const pageTitle = '关于Neonity - 认知凤凰社主理人';
+const pageDescription = 'Neonity，终身学习者，一人公司创业者，前世界500强/国内500强高管。专注AI时代的学习方法、认知升级与一人公司创业实践。';
 ---
 
 <Layout title={pageTitle} description={pageDescription} pubDate={new Date()} showHeader={false}>
-  <p>
-    Hey! I'm a senior software engineer who loves designing reliable systems and shipping products that feel great to use.
-  </p>
-  <p>
-    I work across the stack with TypeScript, Node.js, React/Next.js, and PostgreSQL. I care deeply about readable code,
-    strong tests, and observability. My approach: ship small, iterate quickly, measure outcomes.
-  </p>
-  <p>
-    Recent highlights include leading a migration from a monolith to well‑scoped services, improving p95 latency,
-    and introducing CI/CD with preview environments and quality gates.
-  </p>
-  <p>
-    Outside of feature work, I enjoy mentoring, documentation, and building design‑system components that make teams faster.
-    Always learning—and always happy to collaborate on meaningful problems.
-  </p>
+  <h2>👋 你好，我是Neonity</h2>
+
+  <p>一个终身学习者，一人公司创业者，认知凤凰社主理人。</p>
+
+  <h3>🎯 我的身份</h3>
+  <ul>
+    <li>🌍 <strong>前世界500强/国内500强高管</strong> - 拥有丰富的企业管理和战略经验</li>
+    <li>🚀 <strong>一人公司创业者</strong> - 正在探索AI时代的个人创业新模式</li>
+    <li>📚 <strong>终身学习者</strong> - 热衷于认知升级和知识管理</li>
+    <li>🤖 <strong>AI实践者</strong> - 深度使用AI工具提升学习工作效率</li>
+  </ul>
+
+  <h3>💡 我的理念</h3>
+  <p>在这个AI快速发展的时代，<strong>求知欲</strong>是最重要的资产。只要有强烈的学习欲望，借助AI和互联网技术，每个人都能快速掌握新知识，建立个人知识体系，并通过内容创作实现价值变现。</p>
+
+  <h3>🛠️ 我关注的领域</h3>
+  <ul>
+    <li><strong>AI学习方法论</strong> - 如何借助AI工具高效学习</li>
+    <li><strong>认知科学</strong> - 大脑如何工作，如何优化思维方式</li>
+    <li><strong>知识管理</strong> - 构建个人知识体系</li>
+    <li><strong>一人公司</strong> - 个人创业和内容变现</li>
+    <li><strong>思维模型</strong> - 多元思维框架的建立与应用</li>
+  </ul>
+
+  <h3>🎨 我的项目</h3>
+  <ul>
+    <li><strong>认知凤凰社</strong> - 微信公众号，分享认知升级和AI学习实践</li>
+    <li><strong>AI导师系统</strong> - 构建各领域专家的AI导师，如查理·芒格投资导师</li>
+    <li><strong>知识管理工具</strong> - 基于Notion和AI的个人知识库系统</li>
+  </ul>
+
+  <h3>🛠️ 技术栈与工具</h3>
+  <p><strong>技术栈</strong>：TypeScript, Node.js, React/Next.js, Astro, PostgreSQL</p>
+  <p><strong>笔记系统</strong>：Notion + Obsidian + AI工具构建个人知识库</p>
+  <p><strong>AI工具</strong>：Claude Code, Cursor, Claude 4.5, ChatGPT, Gemini 3 pro preview, Kimi K2, GLM 4.6, DeepSeek</p>
+
+  <h3>📬 联系我</h3>
+  <ul>
+    <li>📧 邮箱：neonity@aliyun.com</li>
+    <li>💬 微信：搜索"认知凤凰社"或添加neonity2025</li>
+    <li>🎵 微信公众号：认知凤凰社</li>
+  </ul>
+
+  <p><strong>欢迎订阅我的内容，一起探索AI时代的个人成长与创业之路！</strong></p>
 
   <GlowLineSeparator />
-
 </Layout>
