@@ -23,7 +23,15 @@
 	font-display: swap;
 }
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family:
+		"Atkinson",
+		-apple-system,
+		BlinkMacSystemFont,
+		"PingFang SC",
+		"Hiragino Sans GB",
+		"Microsoft YaHei",
+		"WenQuanYi Micro Hei",
+		sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -32,7 +40,11 @@ body {
 	overflow-wrap: break-word;
     color: var(--color-text-secondary);
 	font-size: 20px;
-	line-height: 1.7;
+	line-height: 1.8;
+	letter-spacing: 0.01em;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 /* Default main layout for legacy pages.
    Pages that manage layout with utility classes should add class `use-utility-layout` to <main> to opt out. */
@@ -48,24 +60,28 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
+	margin: 1.8em 0 0.8em 0;
 	color: rgb(var(--black));
-	line-height: 1.2;
+	line-height: 1.3;
+	font-weight: 600;
 }
 h1 {
-    font-size: 2.75em;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 h2 {
-    font-size: 2.2em;
+    font-size: 2em;
+    letter-spacing: -0.01em;
 }
 h3 {
-    font-size: 1.75em;
+    font-size: 1.6em;
 }
 h4 {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 h5 {
-    font-size: 1.125em;
+    font-size: 1.1em;
 }
 strong,
 b {
@@ -81,10 +97,14 @@ a:not(.sw-btn):not(.sw-btn-sm):not(.no-underline):hover {
     text-decoration-thickness: 2px;
 }
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
+	text-align: justify;
+	text-justify: inter-ideograph;
 }
 .prose p {
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
+	text-align: justify;
+	text-justify: inter-ideograph;
 }
 textarea {
 	width: 100%;
@@ -125,11 +145,154 @@ hr {
 }
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 17px;
+		line-height: 1.75;
+		letter-spacing: 0.005em;
 	}
+
 	main {
-		padding: 1em;
+		padding: 1.5em 1em;
 	}
+
+	/* 移动端标题优化 */
+	h1, h2, h3, h4, h5, h6 {
+		margin: 1.5em 0 0.7em 0;
+		line-height: 1.35;
+	}
+
+	h1 {
+		font-size: 2em;
+		letter-spacing: -0.01em;
+	}
+
+	h2 {
+		font-size: 1.65em;
+	}
+
+	h3 {
+		font-size: 1.4em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+	}
+
+	h5 {
+		font-size: 1.05em;
+	}
+
+	/* 移动端段落优化 */
+	p {
+		margin-bottom: 1em;
+		text-align: left;
+	}
+
+	.prose p {
+		margin-bottom: 1em;
+		text-align: left;
+	}
+
+	/* 移动端引用块优化 */
+	blockquote {
+		font-size: 1.15em;
+		padding: 0.75em 0 0.75em 1em;
+		margin: 1.2em 0;
+	}
+
+	/* 移动端代码块优化 */
+	pre {
+		padding: 1em;
+		font-size: 0.9em;
+		overflow-x: auto;
+	}
+
+	code {
+		font-size: 0.9em;
+	}
+
+	/* 移动端表格优化 */
+	table {
+		font-size: 0.95em;
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
+	/* 移动端列表优化 */
+	.prose ul,
+	.prose ol {
+		padding-left: 1.25rem;
+	}
+
+	.prose ul li,
+	.prose ol li {
+		line-height: 1.85;
+		padding-left: 0.2em;
+	}
+
+	/* 移动端博客文章内容优化 */
+	.blog-prose {
+		padding: 1em;
+		width: calc(100% - 2em);
+	}
+
+	/* 移动端图片优化 */
+	img {
+		border-radius: 6px;
+	}
+
+	/* 移动端链接触摸区域优化 */
+	a:not(.sw-btn):not(.sw-btn-sm):not(.no-underline) {
+		text-underline-offset: 3px;
+	}
+}
+
+/* Chinese typography optimizations */
+/* 中文标点符号优化 */
+.prose {
+	/* 避免行首出现标点 */
+	text-rendering: optimizeLegibility;
+}
+
+/* 中英文混排优化 */
+.prose code,
+.prose pre {
+	font-family: "Atkinson", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* 标点符号间距优化 - 避免标点符号挤压 */
+.prose p, .prose li, .prose td, .prose th {
+	quotes: "201C" "201D" "2018" "2019";
+}
+
+/* 链接和标点符号之间的间距优化 */
+.prose a {
+	word-break: break-word;
+}
+
+/* 列表项优化 */
+.prose ul li, .prose ol li {
+	padding-left: 0.25em;
+	line-height: 1.9;
+}
+
+/* 引用块优化 - 中文阅读体验 */
+.prose blockquote {
+	margin: 1.5em 0;
+	padding: 1em 0 1em 1.5em;
+	line-height: 1.8;
+	font-size: 1.25em;
+	color: var(--color-text-secondary);
+}
+
+/* 表格单元格中文优化 */
+.prose th, .prose td {
+	line-height: 1.8;
+}
+
+/* 避免中文内容在行首出现标点符号 */
+.prose p {
+	hanging-punctuation: first last;
 }
 
 .sr-only {

@@ -5,6 +5,7 @@ pubDate: "2025-11-28"
 updatedDate: "2025-11-28"
 tags: ["memory-science", "cognitive-psychology", "app-design", "learning-skills", "brain-training"]
 category: "Learning"
+featured: true
 ---
 
 ## 什么是"记忆的七宗罪"？

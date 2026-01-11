@@ -205,6 +205,79 @@
 .min-h-featured { min-height: 200px; }
 @media (min-width: 768px) { .min-h-featured { min-height: 200px; } }
 
+/* Mobile-first optimizations */
+@media (max-width: 720px) {
+	/* 移动端按钮触摸优化 - 增加触摸区域 */
+	.sw-btn {
+		padding: 0.75rem 1rem;
+		font-size: 16px;
+		min-height: 44px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.sw-btn-sm {
+		padding: 0.5rem 0.75rem;
+		font-size: 14px;
+		min-height: 40px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* 移动端卡片优化 */
+	.card-surface {
+		border-radius: 12px;
+	}
+
+	/* 移动端标签优化 */
+	.sw-tag {
+		font-size: 11px;
+		padding: 3px 8px;
+	}
+
+	/* 移动端分享按钮优化 */
+	.sw-share-btn {
+		width: 38px;
+		height: 38px;
+	}
+
+	/* 移动端博客卡片间距优化 */
+	.blog-grid {
+		gap: 1rem;
+	}
+
+	/* 移动端导航按钮优化 */
+	.sw-post-nav .sw-nav-btn {
+		padding: 0.875rem 1rem;
+		min-height: 56px;
+	}
+
+	/* 移动端容器优化 */
+	.blog-prose {
+		padding: 0.875em;
+	}
+
+	/* 移动端分隔符优化 */
+	.sw-separator-glow {
+		height: 10px;
+	}
+}
+
+/* 触摸设备优化 - 增加触摸目标的最小尺寸 */
+@media (hover: none) and (pointer: coarse) {
+	/* 所有可点击元素增加触摸区域 */
+	.sw-btn,
+	.sw-btn-sm,
+	a,
+	.sw-share-btn,
+	.sw-tag {
+		min-touch-target: 44px;
+		min-touch-target: 44px;
+	}
+}
+
 /* Header link colors (restore original subtle default, accent on hover) */
 .sw-header .internal-links a {
   color: var(--color-text-secondary);
